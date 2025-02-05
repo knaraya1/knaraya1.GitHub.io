@@ -1,0 +1,22 @@
+header {
+    padding: 20px;
+    border: red solid 5px;
+    background-color: yellow;
+}
+footer {
+    padding: 50px;
+    border: black solid 2px;
+}
+ul {
+   background-color: greenyellow;
+   border: black solid 3px
+}
+footer {
+    background-color: lightgray;
+}
+.indent {
+    text-indent: 50px;
+}
+.courses {
+    padding: 2px
+}
