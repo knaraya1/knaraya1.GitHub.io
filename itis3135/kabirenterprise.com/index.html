@@ -27,9 +27,7 @@
 </head>
 <body>
     <header>
-        <h1>Kabir Narayan ITIS3135
-            
-        </h1>
+        <div data-include="../components/header.html"></div>
         <img src="https://static.vecteezy.com/system/resources/thumbnails/017/764/201/small/bird-freedom-fly-animal-line-art-linear-simple-abstract-minimalist-circle-border-logo-design-vector.jpg" alt="kabir enterprise logo">
     </header>
     <main>
@@ -59,19 +57,13 @@
         
         
         <p>Kabir Enterprise 2025 &copy</p>
-    </footer>
-    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-        <img style="border:0;width:88px;height:31px"
-            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-    </a>
-    
+   
+        <div data-include="../components/footer.html"></div>
+   </footer> 
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
-    
+    <script src="../scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
