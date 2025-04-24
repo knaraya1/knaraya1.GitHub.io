@@ -1,0 +1,10 @@
+header {
+    padding: 20px;
+    border: blue solid 5px;
+    background-color: lightblue;
+}
+footer {
+    padding: 50px;
+    border: black solid 2px;
+    background-color: lightcyan;
+}
