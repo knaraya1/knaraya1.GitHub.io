@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Slideshow Container */
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding-bottom: 20px;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Number Text (Slide Indicators) */
+.numbertext {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Images */
+.mySlides img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.next {
+    right: 15px;
+}
+
+.prev {
+    left: 15px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Section */
+.caption-container {
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    font-size: 18px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Thumbnail Row */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.row img {
+    width: 60px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border-color 0.3s;
+}
+
+.row img:hover, .row img.active {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    .prev, .next {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    .caption-container {
+        font-size: 16px;
+    }
+}

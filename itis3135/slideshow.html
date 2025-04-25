@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
+    <script src="scripts/slideshow.js" defer></script> <!-- External Slideshow Script -->
+    <link rel="stylesheet" href="styles/slideshow.css"> <!-- External CSS -->
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+        <h2>Slideshow Page</h2>
+    </header>
+
+    <!-- Slideshow Container -->
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <figure>
+                <img src="images/keyboard.png" style="width:100%">
+                <figcaption>K for Keyboard</figcaption>
+            </figure>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <figure>
+                <img src="images/airfryer.png" style="width:100%">
+                <figcaption>A for Air fryer</figcaption>
+            </figure>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <figure>
+                <img src="images/bird.png" style="width:100%">
+                <figcaption>B for Bird</figcaption>
+            </figure>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <figure>
+                <img src="images/ice.png" style="width:100%">
+                <figcaption>I for Ice</figcaption>
+            </figure>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <figure>
+                <img src="images/railing.png" style="width:100%">
+                <figcaption>R for Railing</figcaption>
+            </figure>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <figure>
+                <img src="images/Napkin.png" style="width:100%">
+                <figcaption>N for Napkin</figcaption>
+            </figure>
+        </div>
+
+        <!-- Next and Previous Buttons -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+
+        <!-- Image Text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail Navigation -->
+        <div class="row">
+            <img class="demo cursor" src="images/keyboard.png" onclick="currentSlide(1)">
+            <img class="demo cursor" src="images/airfryer.png" onclick="currentSlide(2)">
+            <img class="demo cursor" src="images/bird.png" onclick="currentSlide(3)">
+            <img class="demo cursor" src="images/ice.png" onclick="currentSlide(4)">
+            <img class="demo cursor" src="images/railing.png" onclick="currentSlide(5)">
+            <img class="demo cursor" src="images/Napkin.png" onclick="currentSlide(6)">
+        </div>
+    </div>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
