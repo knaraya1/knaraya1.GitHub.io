@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO</title>
+    <style>
+        /* General Page Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Text color for readability */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Form Container */
+form {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 4px; /* Rounded corners for input fields */
+    background-color: #f5f5f5; /* Light background for input fields */
+    box-sizing: border-box;
+}
+
+/* Focus Effect for Inputs */
+input:focus, textarea:focus {
+    border-color: #007bff; /* Blue border */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%; /* Full-width button */
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Courses Container */
+#coursesContainer {
+    margin-top: 20px;
+}
+
+#coursesContainer div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#coursesContainer input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Display Section */
+#formDataContainer {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none; /* Hidden by default */
+}
+
+/* Header and Footer */
+header, footer {
+    margin: 20px auto;
+    text-align: center;
+    color: #888;
+}
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <!-- Form Section -->
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="mascot">Mascot:</label>
+        <input type="text" id="mascot" name="mascot">
+
+        <label for="imageUpload">Image Upload (PNG/JPG only):</label>
+        <input type="file" id="imageUpload" name="imageUpload" accept="image/png, image/jpeg">
+
+        <label for="imageCaption">Image Caption:</label>
+        <input type="text" id="imageCaption" name="imageCaption">
+
+        <label for="personalBackground">Personal Background:</label>
+        <textarea id="personalBackground" name="personalBackground"></textarea>
+
+        <label for="professionalBackground">Professional Background:</label>
+        <textarea id="professionalBackground" name="professionalBackground"></textarea>
+
+        <label for="academicBackground">Academic Background:</label>
+        <textarea id="academicBackground" name="academicBackground"></textarea>
+
+        <label for="webDevBackground">Background in Web Development:</label>
+        <textarea id="webDevBackground" name="webDevBackground"></textarea>
+
+        <label for="primaryPlatform">Primary Computer Platform:</label>
+        <input type="text" id="primaryPlatform" name="primaryPlatform">
+
+        <label>Courses Currently Taking:</label>
+        <div id="coursesContainer">
+            <button type="button" onclick="addCourse()">Add Course</button>
+        </div>
+
+        <label for="funnyThing">Funny Thing?</label>
+        <textarea id="funnyThing" name="funnyThing"></textarea>
+
+        <label for="anythingElse">Anything Else?</label>
+        <textarea id="anythingElse" name="anythingElse"></textarea>
+
+        <input type="checkbox" id="acknowledgment" name="acknowledgment">
+        <label for="acknowledgment">
+            I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Form Data Display Section -->
+    <div id="formDataContainer" style="display: none;"></div>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js" defer></script>
+</body>
+</html>
