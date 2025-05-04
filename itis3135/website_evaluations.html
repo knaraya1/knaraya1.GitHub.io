@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAP Website Evaluations</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+        <h2>Website Evaluations</h2>
+    </header>
+    
+    <section class="bad">
+        <h3><a href="https://www.art.yale.edu/">Yale University School of Art</a></h3>
+        <p>This is a website for the Yale University that offers undergraduate-level art courses.</p>
+        <ul>
+            <li><strong>C: </strong>The page has strong contrast between each of its sections. However, the headings' low contrast with the dark background makes some of them hard to read.</li>
+            <li><strong>R: </strong>Some of the sections of the page are repeated, while other sections are only displayed once and stand out too much.</li>
+            <li><strong>A: </strong>The page features some alignment on the left, but other sections are scattered throughout the page, especially near the center.</li>
+            <li><strong>P: </strong>Only some related sections are together, while others which are different are spread or also close together</li>
+        </ul>
+        <p></p>
+    </section>
+
+    <section class="good">
+        <h3><a href="https://www.amazon.com/">Amazon</a></h3>
+        <p>This website is for shopping and ordering online.</p>
+        <ul>
+            <li><strong>C: </strong>The colors of the text and the background of the website are clearly different and make all text easy to read.</li>
+            <li><strong>R: </strong>The page repeats similar sections in a grid like layout that make navigating easier.</li>
+            <li><strong>A: </strong>The alignment of the grid layout is neat, as well as the content of the footer.</li>
+            <li><strong>P: </strong>All the different sections in the grid layout are close together while the nav bar is separated with a banner.</li>
+        </ul>
+        <p></p>
+    </section>
+
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>   
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>
